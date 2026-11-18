@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-frame: #111111;
+    --text-primary: #F4EDE1;
+    --text-secondary: #3A3D42;
+    --accent-walnut: #6B4A2F;
+  }
+
+  html,
+  body {
+    background-color: var(--bg-frame);
+    color: var(--text-primary);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.text-shadow-subtle {
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes canvasSettle {
+  0% {
+    transform: translateY(-6%);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
